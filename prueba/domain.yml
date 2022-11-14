@@ -1,0 +1,63 @@
+version: "3.1"
+
+intents:
+  - saludar
+  - pedir_ayuda
+  - informar
+  - buscar_tramite_form
+
+entities:
+  - palabra_clave
+  - tema
+  - departamento
+  - destinatario
+  - tramite
+  - texto_libre
+slots:
+  palabra_clave:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: palabra_clave
+  tema:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: tema
+  departamento:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: departamento
+  destinatario:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: destinatario 
+
+  tramite:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: tramite
+
+forms:
+  buscar_tramite_form:
+    required_slots:
+    - tramite
+
+
+responses:
+  utter_greet:
+  - text: "Hola! Que tal? {palabra_clave}"
+
+action:
+- validate_tramite_form
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

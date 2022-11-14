@@ -1,0 +1,26 @@
+version: "3.1"
+
+nlu:
+- intent: saludar
+  examples: |
+    - hi
+    - hola
+    - hey
+- intent: pedir_ayuda
+  examples: |
+    - quiero una ayuda
+    - me gustaria buscar un trámite
+    - estoy buscando unos trámites
+    - no consigo encontrar un trámite
+    - no se cual es el trámite
+    - quiero buscar una ayuda
+- intent: informar
+  examples: |
+    - quiero buscar [una ayuda sobre imprevistos](texto_libre) de [2022](palabra_clave)
+    - [quiero buscar una ayuda](texto_libre)
+    - estoy buscando trámites sobre [ciudadanía](tema)
+    - no encuentro las ayudas de [recaudación](tema)
+    - una ayuda del [departamento de acción social](departamento)
+    - un tramite de el [departamento de hacienda y finanzas](departamento)
+    - para [empresas](destinatario)
+    - las ayudas para [personas físicas](destinatario)
