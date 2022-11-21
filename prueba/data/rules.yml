@@ -8,9 +8,10 @@ rules:
     - intent: saludar
     - intent: informar
   - action: utter_greet
+
 #activar form para buscar tramites
-- rule: Activar form de tramite
-  steps:
-  - intent: pedir_ayuda
-  - action: buscar_tramite_form
-  - active_loop: buscar_tramite_form
+# - rule: Activar form de tramite
+#   steps:
+#   - intent: pedir_ayuda
+#   - action: buscar_tramite_form
+#   - active_loop: buscar_tramite_form

@@ -1,6 +1,15 @@
 version: "3.1"
 
 nlu:
+- regex: fecha
+  examples: |
+    - \d{2}
+    - \d{4}
+
+- regex: texto_libre
+  examples: |
+    - [A-Za-z]
+    
 - intent: saludar
   examples: |
     - hi
@@ -16,11 +25,10 @@ nlu:
     - quiero buscar una ayuda
 - intent: informar
   examples: |
-    - quiero buscar [una ayuda sobre imprevistos](texto_libre) de [2022](palabra_clave)
-    - [quiero buscar una ayuda](texto_libre)
+    - quiero buscar una [ayuda](palabra_clave) sobre [imprevistos](tema) de [2022](fecha)
     - estoy buscando trámites sobre [ciudadanía](tema)
     - no encuentro las ayudas de [recaudación](tema)
-    - una ayuda del [departamento de acción social](departamento)
-    - un tramite de el [departamento de hacienda y finanzas](departamento)
+    - una ayuda del departamento de [acción social](departamento)
+    - un tramite de el departamento de [hacienda y finanzas](departamento)
     - para [empresas](destinatario)
     - las ayudas para [personas físicas](destinatario)

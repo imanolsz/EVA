@@ -13,6 +13,7 @@ entities:
   - destinatario
   - tramite
   - texto_libre
+  - fecha
 slots:
   palabra_clave:
     type: text

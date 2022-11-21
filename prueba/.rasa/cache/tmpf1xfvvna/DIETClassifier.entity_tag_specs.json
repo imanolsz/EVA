@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-departamento",
+      "2": "I-departamento",
+      "3": "L-departamento",
+      "4": "U-departamento",
+      "5": "B-destinatario",
+      "6": "I-destinatario",
+      "7": "L-destinatario",
+      "8": "U-destinatario",
+      "9": "B-palabra_clave",
+      "10": "I-palabra_clave",
+      "11": "L-palabra_clave",
+      "12": "U-palabra_clave",
+      "13": "B-tema",
+      "14": "I-tema",
+      "15": "L-tema",
+      "16": "U-tema",
+      "17": "B-texto_libre",
+      "18": "I-texto_libre",
+      "19": "L-texto_libre",
+      "20": "U-texto_libre",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-departamento": 1,
+      "I-departamento": 2,
+      "L-departamento": 3,
+      "U-departamento": 4,
+      "B-destinatario": 5,
+      "I-destinatario": 6,
+      "L-destinatario": 7,
+      "U-destinatario": 8,
+      "B-palabra_clave": 9,
+      "I-palabra_clave": 10,
+      "L-palabra_clave": 11,
+      "U-palabra_clave": 12,
+      "B-tema": 13,
+      "I-tema": 14,
+      "L-tema": 15,
+      "U-tema": 16,
+      "B-texto_libre": 17,
+      "I-texto_libre": 18,
+      "L-texto_libre": 19,
+      "U-texto_libre": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]
